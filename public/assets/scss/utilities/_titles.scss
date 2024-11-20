@@ -1,0 +1,56 @@
+ .title-wrap {
+     display: grid;
+     align-items: center;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: space-between;
+     .title-area {
+        max-width: 645px;
+        margin: 0;
+    }
+    @include sm{  
+      grid-template-columns: repeat(1, 1fr);
+    }
+ }
+
+ .profile-wrapper{
+    padding: 0 0 50px 0 !important;
+ }
+
+ .title-area {
+     max-width: 100%; 
+
+     .subtitle {
+         text-align: center;
+         font-family: "Kumbh Sans", sans-serif;
+         font-size: 24px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 28px;
+         text-transform: uppercase;
+         background: linear-gradient(90deg, #000000 0%, #000 123.82%);
+         background-clip: text;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         margin-bottom: 10px;
+     }
+
+     .title {
+         color: black;
+         font-family: "Plus Jakarta Sans", sans-serif;
+         font-size: 30px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 50px;
+         padding: 50px 0 50px 0 !important;
+     }
+
+     .text {
+         color: black;
+         font-family: "Plus Jakarta Sans", sans-serif;
+         font-size: 24px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 2;
+         padding: 50px 0 50px 0 !important;
+     }
+ }

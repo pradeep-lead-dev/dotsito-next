@@ -1,0 +1,30 @@
+// Define theme colors as needed
+$theme-color2: #2136b2; // Inner dot color
+
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px; // Inner dot size
+  height: 20px;
+  /* background-color: $theme-color2; */ // Removed color
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.8;
+
+  // Inner dot scaling effect on clickable elements
+  &.active {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+// Hide cursor follower on small screens
+@media (max-width: 768px) {
+  .cursor-follower {
+    display: none;
+  }
+}

@@ -1,0 +1,230 @@
+// Bootstrap
+@import "/assets/css/bootstrap.min.css";
+
+// Fontawesome Icon
+@import "/assets/css/fontawesome.min.css";
+
+// Animate Css
+@import "/assets/css/animate.css";
+
+// Magnific Popup
+@import "/assets/css/magnific-popup.min.css";
+
+// Swiper Js
+@import "/assets/css/swiper-bundle.min.css";
+
+// Theme Custom CSS
+@import "./main.scss";
+
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+a {
+  cursor: pointer !important;
+}
+.menuActive {
+  color: black !important;
+}
+.page-nav-wrap .active a {
+  background: linear-gradient(90deg, #000000 0%, #9a989b 123.82%) !important;
+  color: var(--white-color) !important;
+  border: 1px solid transparent !important;
+}
+.gt-mobile-menu {
+  .sub-menu {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    &.active {
+      max-height: 500px;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .testimonial-wrap.style3 .testimonial-slider3 .swiper-slide.tss3 {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+// --toastify-z-index: 9999;
+
+.Toastify__toast-container {
+  z-index: 99999 !important;
+}
+.team-wrap.style2 .team-slider1 .swiper-slide.mr-0{
+  // margin-right: 0px !important;
+  // width: 100% !important;
+  &>*{
+    width: 100%;
+  }
+}.gt-btn-icon{
+  text-wrap: nowrap;
+}
+
+// .project-slider1 {
+//   padding: 20px; /* Optional padding around the slider */
+// }
+
+// .swiper {
+//   padding-bottom: 20px; /* Adds space for scrollbar */
+// }
+
+// .swiper-slide {
+//   display: flex;
+//   justify-content: center; /* Center the card inside the slide */
+//   align-items: center;
+// }
+
+// .project-card {
+//   background-color: white;
+//   border: 1px solid #ccc;
+//   border-radius: 15px;
+//   padding: 20px;
+//   // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//   // transition: transform 0.3s ease, box-shadow 0.3s ease;
+// }
+
+// .project-card:hover {
+//   // transform: translateY(-5px);
+//   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.001);
+// }
+
+// .project-card-image {
+//   height: 200px;
+//   text-align: center;
+//   margin-bottom: 15px;
+// }
+
+// .project-card-content {
+//   // font-size: 16px;
+//   color: #555;
+//   text-align: center;
+// }
+
+// /* Gap between slides */
+// // .swiper-slide {
+// //   margin-right: 20px; /* Adjust gap between slides */
+// // }
+
+// // .swiper-slide:last-child {
+// //   margin-right: 0; /* Remove margin from last slide */
+// // }
+
+// /* Make Swiper responsive */
+// @media (max-width: 1024px) { /* Tablet */
+//   // .swiper-slide {
+//   //   margin-right: 15px;
+//   // }
+
+//   .project-card {
+//     // padding: 15px;
+//   }
+// }
+
+// @media (max-width: 768px) { /* Mobile */
+//   // .swiper-slide {
+//   //   margin-right: 10px;
+//   // }
+
+//   .project-card {
+//     // padding: 10px;
+//   }
+// }
+
+.project-slider1 {
+  padding: 0 20px 0 0;
+}
+
+.swiper {
+  // padding-bottom: 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Stretch all slides to the same height */
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%; /* Take full height of the parent swiper-slide */
+}
+
+.project-card-image {
+  height: 200px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.project-card-content {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) { /* Tablet */
+  .project-card {
+    padding: 15px;
+  }
+  .counter-area{
+    
+    margin-bottom: -140px !important;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .project-card {
+    padding: 10px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .blog-wrap {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .title-area {
+    width: 100%;
+    text-align: center;
+  }
+
+  .blog-card-body {
+    padding: 10px; /* Reduce padding for better fit on smaller screens */
+  }
+
+  .title2 {
+    width: 90%;
+    font-size: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .counter-area{
+    margin-top: -150px !important;
+    margin-bottom: -140px !important;
+    overflow: hidden;
+  }
+}
+
+// .container{
+//   margin-left: 1% !important;
+// }
+
+// .service-list-active{
+//   color: rgba(3, 3, 255, 0.616) !important;
+
+// }
+// .service-list:hover{
+//   color: blue !important;
+// }

@@ -1,0 +1,76 @@
+/*----------------------------------------------
+    # Counter style here
+----------------------------------------------*/
+.counter-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    place-items: center;
+    gap: 35px;
+    padding: 80px 66px;
+    background-color: cadetblue;
+    /* border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    /* border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+    /* border-top: 14px solid #3178ff;
+    border-right: 14px solid #3178ff;
+    box-shadow: 14px 0px 0px 0px #3178ff inset;
+    background: linear-gradient(90deg, #000000 0%, #000000 123.82%);*/
+    z-index: 5;
+    position: relative;
+
+    @include lg {
+        gap: 0;
+        padding: 60px 15px;
+
+        .counter-box {
+            gap: 10px;
+        }
+    }
+
+    @include md {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        .counter-box {
+            gap: 20px;
+        }
+    }
+
+    @include sm {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        top: 90px;
+        margin-bottom: 100px;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+
+        .counter-box {
+            gap: 20px;
+        }
+    }
+
+
+    &.style2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-content: center;
+        place-items: center;
+        gap: 35px;
+        padding: 50px 66px;
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 500px;
+        border-top-left-radius: 500px;
+        border-bottom-left-radius: 500px;
+        border-right: 14px solid rgba(55, 55, 56, 0.9);
+
+        box-shadow: 14px 0px 0px 0px rgba(212, 197, 2534, 0.5) inset;
+        background: linear-gradient(90deg, #000000 0%, #000000 123.82%);
+        z-index: 5;
+        position: relative;
+
+    }
+}
