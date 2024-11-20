@@ -5,7 +5,7 @@ import About from "@/components/homes/home-1/About";
 import Offering from "@/components/homes/home-1/Offering";
 import VideoBox from "@/components/homes/home-1/VideoBox";
 import AboutCta from "@/components/otherPages/AboutCta";
-import Testimonials from "@/components/homes/home-2/Testimonials";
+// import Testimonials from "@/components/homes/home-2/Testimonials";
 import Link from "next/link";
 import ChatGPTWidget from "@/app/ChatGPTWidget";
 
@@ -56,7 +56,7 @@ export default function Page() {
         <Offering />
         <VideoBox />
         <AboutCta />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <ChatGPTWidget/>
         <div className="pb-300"></div>
         <Cta />

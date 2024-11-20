@@ -1,9 +1,9 @@
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
-import HeaderTop from "@/components/headers/HeaderTop";
+// import Footer1 from "@/components/footers/Footer1";
+// import Header1 from "@/components/headers/Header1";
+// import HeaderTop from "@/components/headers/HeaderTop";
 
-import Cta from "@/components/common/Cta";
-import Pricing from "@/components/homes/home-3/Pricing";
+// import Cta from "@/components/common/Cta";
+// import Pricing from "@/components/homes/home-3/Pricing";
 import f from "next/link";
 export const metadata = {
   title: "Pricing || Dotsito Technologies",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <Header1 />
+      {/* <Header1 /> */}
       <main className="main position-relative" id="mains">
         <div className="breadcrumb-wrapper">
         <div
@@ -47,11 +47,11 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <Pricing />
+        {/* <Pricing />
         <div className="pb-300"></div>
-        <Cta />
+        <Cta /> */}
       </main>
-      <Footer1 />
+      {/* <Footer1 /> */}
     </>
   );
 }
