@@ -42,7 +42,7 @@ export default function HeroModule({ videoPath, title, subtitle, customButton, c
                   scroll={false}
                   href={customButtonLink}
                   className="gt-btn gt-btn-icon"
-                  style={{ padding: '14px 20px', textTransform: 'capitalize', fontWeight: 'normal' }}
+                  style={{ padding: '14px 20px', textTransform: 'capitalize', fontWeight: 'normal'}}
                 >
                   {customButtonText || `Explore More`}
                 </Link>
@@ -52,19 +52,17 @@ export default function HeroModule({ videoPath, title, subtitle, customButton, c
           </div>
         </SwiperSlide>
       </Swiper>
-      {customText && (
-        <div>
-          <h2
-            className="title2 hero-subtitle"
-            data-ani="slideindown"
-            data-ani-delay="0.2s"
-            style={{ margin: '20px auto' }}
-          >
-            {customText}
-          </h2>
-        </div>
-      )}
 
+      <div>
+        <h2
+          className="title2 hero-subtitle"
+          data-ani="slideindown"
+          data-ani-delay="0.2s"
+          style={{ margin: '20px auto' }}
+        >
+          {customText}
+        </h2>
+      </div>
 
 
 
