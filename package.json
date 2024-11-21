@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/material": "^6.1.8",
     "@popperjs/core": "^2.11.8",
     "antd": "^5.22.1",
     "bootstrap": "^5.3.3",

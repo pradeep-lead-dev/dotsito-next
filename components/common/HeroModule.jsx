@@ -5,7 +5,7 @@ import { slidesData } from "@/data/heroSlides";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function HeroModule({ videoPath, title, subtitle, customButton, customButtonLink, customText, imagePath, insight, customButtonText, customHTMLBanner, job, customHTMLBannerUpper }) {
+export default function HeroModule({ videoPath, title, subtitle, customButton, customButtonLink, customText, imagePath, insight, customButtonText, customHTMLBanner, job, customHTMLBannerUpper, noSpace }) {
   return (
     <section className="hero-1" id="hero10" style={{ width: "100%", position: "relative" }}>
       <Swiper
@@ -42,7 +42,7 @@ export default function HeroModule({ videoPath, title, subtitle, customButton, c
                   scroll={false}
                   href={customButtonLink}
                   className="gt-btn gt-btn-icon"
-                  style={{ padding: '14px 20px', textTransform: 'capitalize', fontWeight: 'normal'}}
+                  style={{ padding: '14px 20px', textTransform: 'capitalize', fontWeight: 'normal' }}
                 >
                   {customButtonText || `Explore More`}
                 </Link>
@@ -58,7 +58,7 @@ export default function HeroModule({ videoPath, title, subtitle, customButton, c
           className="title2 hero-subtitle"
           data-ani="slideindown"
           data-ani-delay="0.2s"
-          style={{ margin: '20px auto' }}
+          style={{ margin: noSpace ? '0px' : '20px auto' }}
         >
           {customText}
         </h2>

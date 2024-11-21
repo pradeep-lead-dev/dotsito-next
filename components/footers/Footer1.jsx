@@ -139,7 +139,7 @@ export default function Footer1() {
                     <ul className="menu">
                       {footerLinks.map((item, index) => (
                         <li key={index}>
-                          <a href={item.href} target="_blank">
+                          <a href={item.href} >
                             <i className="fa-solid fa-chevrons-right" />
                             {item.text}
                           </a>
