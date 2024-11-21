@@ -9,6 +9,7 @@ import Link from "next/link";
 import ChatGPTWidget from "@/app/ChatGPTWidget";
 import Loader from "@/app/Loader";
 import HeroModule from "@/components/common/HeroModule";
+import MapComponent from "@/components/otherPages/contact/MapV2";
 export const metadata = {
   title: "Contact || Dotsito Technologies",
   description: "Dotsito Technologies",
@@ -23,9 +24,12 @@ export default function Page() {
           <HeroModule title={`Contact Us`} subtitle={`We’re here to connect, collaborate, and create solutions that matter. Whether you have a question, need assistance, or want to explore opportunities with us, our team is ready to assist you. Reach out to us through the form below, and let’s start a conversation that drives innovation and success. Your journey with us begins here!`} videoPath={`/assets/videos/contact.mp4`} />
           <Contact />
           {/* <ChatGPTWidget/> */}
-          <Map />
+          {/* <Map /> */}
+          <hr /> 
+          <h6 style={{ textAlign: 'center' }}>Our Locations</h6><br />
+          <MapComponent />
         </main>
-        <Footer1 />
+       <Footer1 />
       </Loader>
     </>
   );

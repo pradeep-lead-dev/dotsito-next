@@ -58,7 +58,7 @@ export default function HeroModule({ videoPath, title, subtitle, customButton, c
           className="title2 hero-subtitle"
           data-ani="slideindown"
           data-ani-delay="0.2s"
-          style={{ margin: noSpace ? '0px' : '20px auto' }}
+          style={{ margin: noSpace ? '0px' : '20px auto', textTransform: 'none' }}
         >
           {customText}
         </h2>

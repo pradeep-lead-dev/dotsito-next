@@ -21,7 +21,7 @@ export default function Page() {
       <Loader>
         <Header1 />
         <main className="main position-relative" id="mains">
-          <HeroModule title={'Insights'} subtitle={`Discover a world of knowledge and innovation in our insights section. From in depth case studies that showcase our transformative solutions to thought provoking blogs offering expert perspectives, we provide a comprehensive view of our journey. Stay updated with our latest achievements, news, and upcoming events as we continue to shape the future with bold ideas and impactful success stories. Explore how our past experiences, present endeavors, and future aspirations drive our commitment to excellence.`} videoPath={`/assets/videos/projects.mp4`} />
+          <HeroModule title={'Insights'} subtitle={`Explore our insights section for in-depth case studies showcasing transformative solutions and thought-provoking blogs offering expert perspectives. Discover how our journey drives innovation and excellence through impactful stories.`} videoPath={`/assets/videos/projects.mp4`} />
 
           <Projects />
           {/* <Projects1 /> */}
