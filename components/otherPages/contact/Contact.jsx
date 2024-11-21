@@ -162,13 +162,13 @@ export default function Contact() {
             <div className="contact-content">
               <div className="title-area">
                 <h3 className="" style={{ padding: "0" }}>Ready to Get Started?</h3>
-                <p>
+                {/* <p>
                   Providing best-of-breed knowledge environment to enquire at{" "}
                   <a href="mailto:operations@dotsito.com" style={{ fontWeight: "bold" }} target="_blank">
                     operations@dotsito.com
                   </a>.
-                </p>
-                <p style={{ marginBottom: '0' }}>Need more information? </p>
+                </p> */}
+                {/* <p style={{ marginBottom: '0' }}>Need more information? </p> */}
                 <p> We will take approximately 3-5 working days to respond to your enquiry.</p>
               </div>
 

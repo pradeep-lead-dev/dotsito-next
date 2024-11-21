@@ -4,7 +4,7 @@ import ChatGPTWidget from "./ChatGPTWidget";
 import Loader from "./Loader"; // Direct path to Loader.jsx in the same directory
 
 export const metadata = {
-  title: "Home || Dotsito Technologies",
+  title: "Dotsito Technologies",
   description: "Dotsito Technologies",
   
 };
