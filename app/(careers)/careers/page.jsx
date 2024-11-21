@@ -24,7 +24,7 @@ export default function Page() {
           <HeroModule title={'Careers'} subtitle={`Fostering intellectual growth through a superior learning environment`} videoPath={`/assets/videos/careers.mp4`} customText={`Let’s help you Rise to new heights`} />
 
 
-          <HeroModule title={'Join Dotsito'} subtitle={`Your aspirations, your career, your path. \n Dotsito invites you.`} imagePath={`/assets/img/careers/bannerbg.jpg`} customButton customButtonLink={`/careers/jobs`} customButtonText={`Join now`} customHTMLBanner={`<br/>Or share your resume at <br/><strong><a style="color: white" href='mailto:operations@dotsito.com'>operations@dotsito.com</a></strong>`}/>
+          <HeroModule title={'Join Dotsito'} subtitle={`Your aspirations, your career, your path. \n Dotsito invites you.`} imagePath={`/assets/img/careers/bannerbg.jpg`} customButton customButtonLink={`/careers/jobs`} customButtonText={`Join now`} customHTMLBanner={`<br/>Or share your resume at <br/><strong><a style="color: white" href='mailto:operations@dotsito.com'>operations@dotsito.com</a></strong>`} noSpace/>
           {/* <Projects /> */}
           {/* <Projects1 /> */}
           {/* <ChatGPTWidget/> */}
