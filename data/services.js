@@ -304,6 +304,7 @@ export const allService = [
   ...serviceItems,
   ...serviceCards,
 ];
+
 export const serviceCategories = [
   //devops
   {
@@ -567,6 +568,7 @@ export const hours = [
 
 export const serviceData = [
   {
+    id: 1,
     category_title: "Enterprise Service Management",
     category_content: "ESM aims to improve efficiency, collaboration, and customer satisfaction by standardizing and automating service delivery processes throughout the organization.",
     category_image: "enterprise_service_management.png",
@@ -603,8 +605,8 @@ export const serviceData = [
       },
     ]
   },
-
   {
+    id: 2,
     category: 'ServiceNow',
     category_title: "Governance Risk and Compliance",
     category_content: "To establish a framework that ensures the organization operates responsibly, mitigates risks effectively, and complies with relevant laws, regulations, and industry standards. GRC practices are crucial for maintaining the company's reputation, protecting its assets and data, and building trust with clients and stakeholders.",
@@ -642,9 +644,8 @@ export const serviceData = [
       },
     ]
   },
-
-
   {
+    id: 3,
     category: 'ServiceNow',
     category_title: "IT Asset Management",
     category_content: "Effectively manage and optimize the lifecycle of IT assets throughout the organization. ITAM provides a structured approach to acquire, deploy, maintain, and retire IT assets, such as hardware, software, licenses, and related resources.",
@@ -682,9 +683,8 @@ export const serviceData = [
       },
     ]
   },
-
-
   {
+    id: 4,
     category: "ServiceNow",
     category_title: "IT Operations Management",
     category_content: "Effectively manage and optimize IT operations to ensure service availability, performance, and efficiency across the organization. ITOM provides a structured approach to monitor, automate, and orchestrate IT operations, including infrastructure, applications, and cloud resources.",
@@ -721,11 +721,8 @@ export const serviceData = [
       }
     ]
   },
-
-
-
-
   {
+    id: 5,
     category: 'ServiceNow',
     category_title: "ServiceNow Managed Service",
     category_content: "To provide comprehensive, ongoing support and management of the ServiceNow platform for the organization and its clients. ServiceNow managed services ensure that the platform is optimized, well-maintained, and aligned with the evolving needs of the business.",
@@ -763,8 +760,8 @@ export const serviceData = [
       },
     ]
   },
-
   {
+    id: 6,
     category: "ServiceNow",
     category_title: "Third-Party Risk Management",
     category_content: "Effectively assess, monitor, and mitigate risks associated with third-party vendors and suppliers. TPRM provides a structured framework to ensure compliance, safeguard data, and maintain business continuity by managing vendor-related risks.",
@@ -801,8 +798,8 @@ export const serviceData = [
       }
     ]
   },
-
   {
+    id: 7,
     category: "ServiceNow",
     category_title: "Human Resources Service Delivery",
     category_content: "Streamline and enhance HR operations by delivering efficient, personalized services to employees. HRSD provides a unified platform to manage HR cases, knowledge, and employee inquiries, improving productivity and employee satisfaction.",
@@ -839,8 +836,8 @@ export const serviceData = [
       }
     ]
   },
-
   {
+    id: 8,
     category: "ServiceNow",
     category_title: "Integrations",
     category_content: "Streamline your workflows by seamlessly connecting ServiceNow with a wide range of third-party applications and services. Integrations enable data exchange, automation, and enhanced efficiency across platforms, ensuring consistent operations and improved decision-making.",
@@ -877,8 +874,8 @@ export const serviceData = [
       }
     ]
   },
-
   {
+    id: 9,
     category: "ServiceNow",
     category_title: "Customer Service Management",
     category_content: "Enhance customer satisfaction and streamline support operations with a unified platform for managing customer inquiries, requests, and issues. CSM enables businesses to provide exceptional service through automation, self-service portals, and proactive case management.",
@@ -915,8 +912,8 @@ export const serviceData = [
       }
     ]
   },
-
   {
+    id: 10,
     category: "ServiceNow",
     category_title: "Cloud Cost Management",
     category_content: "Optimize and manage cloud spending effectively with a comprehensive solution for tracking, controlling, and forecasting cloud costs. Cloud Cost Management provides insights and automation to ensure cost efficiency, eliminate waste, and maximize ROI across cloud services and resources.",
@@ -953,9 +950,8 @@ export const serviceData = [
       }
     ]
   },
-
-
   {
+    id: 11,
     category: 'Flexera',
     category_title: "Flexera Implementation and Support",
     category_content: "Enhance IT asset management, license compliance, and cloud cost management by configuring Flexera solutions to align with organizational requirements. Ensures seamless data transfer, system integration, and ongoing assistance to improve asset visibility and compliance when transitioning from legacy systems to Flexera.",
@@ -996,6 +992,7 @@ export const serviceData = [
     ]
   },
   {
+    id: 12,
     category: "Flexera",
     category_title: "Snow Implementation and Migration",
     category_content: "Optimize and manage your IT assets throughout their lifecycle with SNOW Software. This solution enables organizations to track, manage, and ensure compliance of hardware, software, and licenses, all while improving efficiency and reducing costs.",
@@ -1032,9 +1029,8 @@ export const serviceData = [
       }
     ]
   },
-
-
   {
+    id: 13,
     category: 'Atlassian',
     category_title: "Jira",
     category_content: "Elevate efficiency with our tailored JIRA implementation. From configuration and data migration to process automation and integrations, we streamline workflows and enhance productivity. Benefit from expert onboarding and continuous support to fully leverage your JIRA environment.",
@@ -1073,8 +1069,8 @@ export const serviceData = [
 
     ]
   },
-
   {
+    id: 14,
     category: 'Atlassian',
     category_title: "Confluence",
     category_content: "Transform your team's workflow with our expert Confluence integration and support. We enhance document management, knowledge sharing, and project collaboration by seamlessly integrating Confluence with your existing systems. Benefit from tailored setup, continuous support, and improved productivity through seamless information exchange across your organization.",
@@ -1113,8 +1109,8 @@ export const serviceData = [
 
     ]
   },
-
   {
+    id: 15,
     category: 'ServiceNow',
     category_title: "GenAI",
     category_content: "Leverage the power of generative AI with our specialized tooling implementations. We assist in deploying advanced AI models, integrating them seamlessly with your existing systems, and customizing them to fit your specific needs. Our services enhance content creation, automate processes, and drive innovation across various business functions, ensuring ongoing support and optimization for maximum efficiency.",
@@ -1154,6 +1150,7 @@ export const serviceData = [
     ]
   },
   {
+    id: 16,
     category: 'Dotspot',
     category_title: "Next-Gen Object Detection",
     category_content: "Enhance operational intelligence with our cutting-edge machine learning solution. Achieve precise, real-time object detection and categorization across multiple camera feeds, seamlessly integrating with your systems to optimize efficiency, inventory management, and quality control.",
@@ -1192,6 +1189,7 @@ export const serviceData = [
     ]
   },
   {
+    id: 17,
     category: 'SAP',
     category_title: "SAP Implementation and Support",
     category_content: "Empower your organization with our specialized SAP implementation support. From system configuration and data migration to process optimization and seamless integrations, we enhance operational efficiency and drive business growth. Benefit from expert onboarding, continuous support, and tailored solutions to fully leverage your SAP environment.",
@@ -1229,6 +1227,7 @@ export const serviceData = [
     ]
   },
   {
+    id: 18,
     category: 'Salesforce',
     category_title: "CRM and Marketing Cloud ",
     category_content: "Transform your customer engagement and business operations with our Salesforce implementation support. From system setup and data migration to automation and integrations, we ensure you get the most out of your Salesforce environment. Benefit from personalized configurations, expert guidance, and continuous support to drive sales and foster customer relationships.",
@@ -1265,8 +1264,8 @@ export const serviceData = [
       }
     ]
   },
-
   {
+    id: 19,
     category: "Infrastructure and Security",
     category_title: "DevOps and Infra Automation",
     category_content: "DevOps and Infra automation to enhance the efficiency, reliability, and scalability of their software development and IT operations. These practices are essential for modern organizations that want to deliver high-quality products and services at a faster pace while maintaining a competitive edge.",
@@ -1304,8 +1303,8 @@ export const serviceData = [
       },
     ]
   },
-
   {
+    id: 20,
     category: "Infrastructure and Security",
     category_title: "IT Security Services",
     category_content: "To enhance the overall security posture and operational efficiency of the organization. These practices are crucial for safeguarding sensitive data, protecting against cyber threats, and optimizing IT operations.",
@@ -1343,8 +1342,8 @@ export const serviceData = [
       },
     ]
   },
-
   {
+    id: 21,
     category_title: "QA and Testing",
     category: 'ServiceNow',
     category_content: "To ensure that software products and solutions meet the desired quality standards before they are deployed to production or delivered to clients. QA and Testing are integral components of the software development lifecycle and play a crucial role in delivering reliable, high-quality, and bug-free software.",

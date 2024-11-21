@@ -178,7 +178,7 @@ label {
   margin: 0;
 }
 
-input {
+input, option,select {
   font-family: 'Poppins' !important;
 }
 
@@ -382,7 +382,7 @@ nextjs-portal {
   width: 100%;
   height: 100%;
   background: white;
-  z-index: 1100;
+  z-index: 1;
   overflow-y: auto;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
@@ -426,4 +426,9 @@ nextjs-portal {
 .service-list-active {
   background-color: #e6f7ff;
   color: #1890ff;
+}
+
+.css-1usuzwp-MuiButtonBase-root-MuiTab-root{
+  text-transform: capitalize !important;
+  font-family: 'Poppins' !important;
 }

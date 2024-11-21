@@ -66,6 +66,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-white">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* Optional: Add more favicons */}
         {/* <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />

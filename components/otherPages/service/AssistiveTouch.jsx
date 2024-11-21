@@ -7,7 +7,7 @@ import { CloseOutlined } from "@ant-design/icons";
 const { Panel } = Collapse;
 
 export default function AssistiveTouchServices({ categorizedServices, handleServiceClick, selectedService }) {
-    const [isModalOpen, setModalOpen] = useState(false);
+    const [isModalOpen, setModalOpen] = useState(true);
     const [searchTerm, setSearchTerm] = useState("");
     const [filteredServices, setFilteredServices] = useState(categorizedServices);
     const [activeKey, setActiveKey] = useState(null);
@@ -75,7 +75,7 @@ export default function AssistiveTouchServices({ categorizedServices, handleServ
                             style={{ width: "90%" }}
                             allowClear
                         />
-                        <CloseOutlined className="close-button" onClick={handleCloseModal} />
+                     {selectedService && (<CloseOutlined className="close-button" onClick={handleCloseModal} />)}   
                     </div>
                     <div className="overlay-content">
                         <Collapse
@@ -91,7 +91,7 @@ export default function AssistiveTouchServices({ categorizedServices, handleServ
                                                 <li
                                                     key={item.category_title}
                                                     className={
-                                                        item.category_title === selectedService.category_title
+                                                        item.category_title === selectedService?.category_title
                                                             ? "service-list-active"
                                                             : "service-list"
                                                     }
@@ -102,13 +102,13 @@ export default function AssistiveTouchServices({ categorizedServices, handleServ
                                                     }
                                                     }
                                                     style={{
-                                                        background: item.category_title === selectedService.category_title ? "#1890ff" : "white",
+                                                        background: item.category_title === selectedService?.category_title ? "#1890ff" : "white",
                                                         padding: "12px",
                                                     }}
                                                 >
                                                     <a
                                                         style={{
-                                                            color: selectedService.category_title === item.category_title ? "white" : "#000",
+                                                            color: selectedService?.category_title === item.category_title ? "white" : "#000",
                                                         }}
                                                         href="#service-content"
                                                     >
@@ -123,17 +123,17 @@ export default function AssistiveTouchServices({ categorizedServices, handleServ
                                         {items.map((item) => (
                                             <li
                                                 key={item.category_title}
-                                                className={item.category_title === selectedService.category_title ? "service-list-active" : "service-list"}
+                                                className={item.category_title === selectedService?.category_title ? "service-list-active" : "service-list"}
                                                 onClick={() => handleServiceClick(item)}
                                                 style={{
-                                                    background: item.category_title === selectedService.category_title ? "#1890ff" : "white",
+                                                    background: item.category_title === selectedService?.category_title ? "#1890ff" : "white",
                                                     padding: "5px",
                                                 }}
                                             >
                                                 <a
                                                     style={{
-                                                        color: selectedService.label === item.label ? "blue" : "#000",
-                                                        textDecoration: selectedService.label === item.label ? "underline" : "none",
+                                                        color: selectedService?.label === item.label ? "blue" : "#000",
+                                                        textDecoration: selectedService?.label === item.label ? "underline" : "none",
                                                     }}
                                                 >
                                                     {item.category_title}

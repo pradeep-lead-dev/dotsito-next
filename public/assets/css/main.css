@@ -11376,7 +11376,7 @@ textarea.is-invalid {
   align-items: center;
   gap: 30px;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 .service-details-wrapper

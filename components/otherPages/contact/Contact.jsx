@@ -27,6 +27,7 @@ export default function Contact() {
     { name: "organization", label: "Organization", type: "input" },
     { name: "job_title", label: "Job Title", type: "input" },
     { name: "country", label: "Country", type: "select", options: countries, rules: [{ required: true, message: "Please select your country" }] },
+    { name: "email", label: "Email", type: "input", rules: [{ required: true, message: "Please enter your email address" }] },
     { name: "phone_number", label: "Phone Number", type: "input", rules: [{ required: true, message: "Please enter your phone number" }] },
     { name: "message", label: "Message", type: "textarea", rules: [{ required: true, message: "Please write your message" }], fullSpan: true },
   ];
@@ -214,6 +215,7 @@ export default function Contact() {
                 </Row>
                 <Form.Item>
                   <Button
+                  size='large'
                     type="primary"
                     htmlType="submit"
                     loading={loading}
