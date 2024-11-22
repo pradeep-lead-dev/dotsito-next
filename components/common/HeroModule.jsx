@@ -24,7 +24,8 @@ export default function HeroModule({ videoPath, title, subtitle, customButton, c
                 muted
                 loop
                 playsInline
-                poster={imagePath ? imagePath : videoPath}
+                // preload="auto"
+                poster={imagePath ? imagePath : '/assets/img/bg/building.png'}
               >
                 <source src={videoPath} type="video/mp4" />
                 Your browser does not support the video tag.
