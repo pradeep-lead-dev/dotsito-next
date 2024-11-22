@@ -103,7 +103,7 @@ export default function MobileServices({headerText, exclude}) {
                 }}
             >
                 {filteredTabs.map((category) => (
-                    <Tab key={category} label={category} value={category} style={{ fontFamily: "Poppins" }} />
+                    <Tab key={category} label={category} value={category} style={{ fontFamily: "Poppins", textTransform: 'capitalize' }} />
                 ))}
             </Tabs>
 
