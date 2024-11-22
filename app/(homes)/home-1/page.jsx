@@ -22,7 +22,7 @@ import { insights } from "@/data/insights";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Home1 || Dotsito Technologies",
+  title: "Dotsito Technologies",
   description: "Dotsito Technologies",
   icons: {
     icon: '/favicon.ico',
@@ -39,7 +39,7 @@ export default function Home1() {
         <Header1 />
         <main className="main position-relative" id="mains">
           {/* <Hero /> */}
-          <HeroModule title={`Revolutionizing the World of Dots with ServiceNow`} subtitle={`Innovation drives everything we do at DOTSITO. It is where imagination seamlessly blends with expertise to craft groundbreaking solutions that transform visions into reality. By leveraging cutting edge strategies and transformative technology, we deliver unparalleled value to our clients.`} videoPath={`/assets/videos/hero2.mp4`} customButton customButtonLink={`/services`} customText={`Every Dot Tells a Story of Innovation and Creativity`} />
+          <HeroModule title={`Revolutionizing the World of Dots with ServiceNow`} subtitle={`Innovation drives everything we do at DOTSITO. It is where imagination seamlessly blends with expertise to craft groundbreaking solutions that transform visions into reality. By leveraging cutting edge strategies and transformative technology, we deliver unparalleled value to our clients.`} videoPath={`/assets/videos/hero2.mp4`} customButton customButtonLink={`/services`} customText={`Every dot tells a story of innovation and creativity`} />
           <About />
           <Credible />
           {/* <Techhubs /> */}
