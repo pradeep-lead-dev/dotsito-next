@@ -16,29 +16,35 @@ export const metadata = {
   title: "Insight || Dotsito Technologies",
   description: "Dotsito Technologies",
 };
+export async function generateStaticParams() {
+  return insights.map((insight) => ({
+    id: insight.id.toString(),  // Ensure id is a string
+  }));
+}
+
 export default function Page({ params }) {
   const insight = insights.find(ins => {
     return ins.id == params.id
   })
 
-  
+
 
   return (
     <>
       <Loader >
-      <Header1 />
-      <main className="main position-relative" id="mains">
-        <HeroModule title={insight.title} subtitle={insight.subtitle} imagePath={insight.imgSrc} insight={insight} />
-        <Insight insight={insight}/>
-        <div className="">
-          <h4 style={{textAlign: 'center'}}>Related {insight.category}</h4>
-        </div>
-        <Projects exclude={insight} />
-        {/* <Projects1 /> */}
-        {/* <ChatGPTWidget/> */}
-        {/* <Cta /> */}
-      </main>
-      <Footer1 />
+        <Header1 />
+        <main className="main position-relative" id="mains">
+          <HeroModule title={insight.title} subtitle={insight.subtitle} imagePath={insight.imgSrc} insight={insight} />
+          <Insight insight={insight} />
+          <div className="">
+            <h4 style={{ textAlign: 'center' }}>Related {insight.category}</h4>
+          </div>
+          <Projects exclude={insight} />
+          {/* <Projects1 /> */}
+          {/* <ChatGPTWidget/> */}
+          {/* <Cta /> */}
+        </main>
+        <Footer1 />
       </Loader>
     </>
   );
