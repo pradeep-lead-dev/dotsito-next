@@ -9,7 +9,9 @@ import Link from "next/link";
 import ChatGPTWidget from "@/app/ChatGPTWidget";
 import Loader from "@/app/Loader";
 import HeroModule from "@/components/common/HeroModule";
-import MapComponent from "@/components/otherPages/contact/MapV2";
+import Image from "next/image";
+// import MapComponent from "@/components/otherPages/contact/MapComponent";
+// import MapComponent from "@/components/otherPages/contact/MapV2";
 export const metadata = {
   title: "Contact || Dotsito Technologies",
   description: "Dotsito Technologies",
@@ -21,15 +23,21 @@ export default function Page() {
 
         <Header1 />
         <main className="main position-relative" id="mains">
-          <HeroModule title={`Contact Us`} subtitle={`We’re here to connect, collaborate, and create solutions that matter. Whether you have a question, need assistance, or want to explore opportunities with us, our team is ready to assist you. Reach out to us through the form below, and let’s start a conversation that drives innovation and success. Your journey with us begins here!`} videoPath={`/assets/videos/contact.mp4`} />
+          <HeroModule title={`Contact Us`} subtitle={`We're here to connect, collaborate, and create meaningful solutions. Have questions or ideas? Fill out the form below, and let's start a conversation that drives innovation and success.`} videoPath={`/assets/videos/contact.mp4`} />
           <Contact />
           {/* <ChatGPTWidget/> */}
           {/* <Map /> */}
-          <hr /> 
-          <h6 style={{ textAlign: 'center' }}>Our Locations</h6><br />
-          <MapComponent />
+          <hr />
+          <h6 style={{ textAlign: 'center' }}>Our Locations</h6>
+
+          <div className={'image-container'}>
+            <Image src={`/assets/img/contact/locations-map2.png`} layout="fill" className="image" />
+          </div>
+
+          {/* <MapComponent /> */}
+          <br />
         </main>
-       <Footer1 />
+        <Footer1 />
       </Loader>
     </>
   );
