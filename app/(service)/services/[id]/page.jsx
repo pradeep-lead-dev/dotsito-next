@@ -10,7 +10,11 @@ import { insights } from "@/data/insights";
 import Faq3 from "@/components/otherPages/faq/Faq3";
 import ServiceDetails from "@/components/otherPages/service/ServicesV2";
 
-
+export async function generateStaticParams() {
+  return serviceData.map((service) => ({
+    id: service.id.toString(),  // Ensure id is a string
+  }));
+}
 
 export const metadata = {
   title: "Services || Dotsito Technologies",

@@ -18,6 +18,12 @@ export const metadata = {
   title: "Job || Dotsito Technologies",
   description: "Dotsito Technologies",
 };
+export async function generateStaticParams() {
+  return jobs.map((job) => ({
+    id: job.id.toString(),  // Convert the id to a string if necessary
+  }));
+}
+
 export default function Page({ params }) {
   const job = jobs.find(job => {
     return job.id == params.id
@@ -27,11 +33,11 @@ export default function Page({ params }) {
   return (
     <>
       <Loader >
-      <Header1 />
-      <main className="main position-relative" id="mains" style={{marginBottom: '1rem'}}>
-        <HeroModule title={job.title} subtitle={`${job.jobId} | ${job.type}`} imagePath={`/assets/img/careers/officeimage.jpg`} job={job} 
-        // customHTMLBannerUpper={`<br/>${job.company} | ${job.location}<br/>`} 
-        customHTMLBanner={`<a
+        <Header1 />
+        <main className="main position-relative" id="mains" style={{ marginBottom: '1rem' }}>
+          <HeroModule title={job.title} subtitle={`${job.jobId} | ${job.type}`} imagePath={`/assets/img/careers/officeimage.jpg`} job={job}
+            // customHTMLBannerUpper={`<br/>${job.company} | ${job.location}<br/>`} 
+            customHTMLBanner={`<a
                   href="mailto:operations@dotsito.com?subject=Job Application for ${job.jobId}: ${job.title}"
                   class="gt-btn gt-btn-icon"
                   style= "padding: 14px 20px; margin-right: 1rem; margin-top: 1rem"
@@ -48,13 +54,13 @@ export default function Page({ params }) {
                 </a>
                 
                 `}
-        // customButton customButtonText={`I'm Interested`} customButtonLink={`/careers/jobs/${job.id}/submit`}
-         />
-        
-        <Job job={job}/>
+          // customButton customButtonText={`I'm Interested`} customButtonLink={`/careers/jobs/${job.id}/submit`}
+          />
 
-      </main>
-      <Footer1 />
+          <Job job={job} />
+
+        </main>
+        <Footer1 />
       </Loader>
     </>
   );

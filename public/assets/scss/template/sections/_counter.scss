@@ -3,7 +3,7 @@
 ----------------------------------------------*/
 .counter-wrap {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-content: center;
     place-items: center;
     gap: 35px;
@@ -40,13 +40,13 @@
 
     @include sm {
         grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
+        gap: 50px;
         top: 90px;
         margin-bottom: 100px;
-        border-top-right-radius: 200px;
-        border-bottom-right-radius: 200px;
-        border-top-left-radius: 200px;
-        border-bottom-left-radius: 200px;
+        // border-top-right-radius: 200px;
+        // border-bottom-right-radius: 200px;
+        // border-top-left-radius: 200px;
+        // border-bottom-left-radius: 200px;
 
         .counter-box {
             gap: 20px;
