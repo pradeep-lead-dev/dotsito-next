@@ -1,6 +1,6 @@
 export const counterBoxes = [
   {
-    icon: "/assets/img/icon/counterIcon1_1.png",
+    icon: "/assets/icons/client.png",
     number: 100,
     label: "Satisfied Clients",
     symbol: '%'
