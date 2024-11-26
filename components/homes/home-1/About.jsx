@@ -62,8 +62,8 @@
                       </div>
                       <div className="about-thumb-box counter-box_counter" >
                         <div>
-                          <a className="counter-number" >25</a>
-                          <a className="plus" >+</a>
+                          <a className="counter-number" >100</a>
+                          <a className="plus" >%</a>
                         </div>
                         <a >Satisfied Clients</a>
                       </div>

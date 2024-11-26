@@ -121,7 +121,7 @@ export default function Contact() {
   const sendMailWithLambda = async (values) => {
     setLoading(true);
     const lambdaEndpoint = process.env.NEXT_PUBLIC_AWS_EMAIL_ENDPOINT || 'https://n5jixhhcmgo5l7gicfjgg3yecu0nijdv.lambda-url.ap-south-1.on.aws/';
-    const toEmail = process.env.NEXT_PUBLIC_AWS_TO_EMAIL || 'pradeep.sivakumar@dotsito.com';
+    const toEmail = process.env.NEXT_PUBLIC_AWS_TO_EMAIL || 'operations@dotsito.com';
 
     try {
       const res = await fetch(lambdaEndpoint, {

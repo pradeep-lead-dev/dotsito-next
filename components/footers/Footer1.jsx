@@ -50,7 +50,7 @@ export default function Footer1() {
       style={{ backgroundImage: "url(/assets/img/bg/footerBg1.png)", textAlign: 'center', position:'relative', zIndex: 8 }}
     >
       <div className="widget-area style1 pb-80">
-        <div className="shape2_1">
+        <div className="shape2_1" style={{ position: 'absolute', zIndex: -1 }}>
           <Image
             src="/assets/img/shape/footerShape1_1.png"
             width={361}
@@ -58,7 +58,7 @@ export default function Footer1() {
             alt="shape"
           />
         </div>
-        <div className="shape2_2">
+        <div className="shape2_2" style={{ position: 'absolute', zIndex: -1 }}>
           <Image
             src="/assets/img/shape/footerShape2_2.png"
             width={288}

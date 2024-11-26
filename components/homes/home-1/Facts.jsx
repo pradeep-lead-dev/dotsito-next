@@ -62,7 +62,7 @@ export default function Facts() {
       className="counter-area"
       style={{ marginTop: "-55px", marginBottom: "-160px", overflow: "hidden" }}
     >
-      <div className="container" style={{ padding: "20px",maxWidth:"98%",textAlign:"-webkit-center"}}>
+      <div className="container" style={{ padding: "20px",maxWidth:"100%",textAlign:"-webkit-center"}}>
         <div className="counter-wrap" style={{ width:"100%", justifyContent: "space-around", flexWrap: "wrap" }}>
           {counterBoxes.map((box, index) => (
             <div
@@ -79,7 +79,7 @@ export default function Facts() {
               </div>
               <div style={{  alignItems: "center" }}>
                 <Counter max={box.number} animate={inView} />
-                <a style={{ fontSize: "2em", marginLeft: "4px" }}>+</a>
+                <a style={{ fontSize: "2em", marginLeft: "4px" }}>{box.symbol || '+'}</a>
               </div>
               <p style={{ fontSize: "1em",  marginTop: "10px" }}>{box.label}</p>
             </div>

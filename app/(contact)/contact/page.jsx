@@ -28,7 +28,7 @@ export default function Page() {
           {/* <ChatGPTWidget/> */}
           {/* <Map /> */}
           <hr />
-          <h6 style={{ textAlign: 'center' }}>Our Locations</h6>
+          <h6 style={{ textAlign: 'center' }}>Global Presence</h6>
 
           <div className={'image-container'}>
             <Image src={`/assets/img/contact/locations-map2.png`} layout="fill" className="image" />
