@@ -43,7 +43,7 @@ export default function Facts() {
               return max;
             }
           });
-        }, 50); // Slower increment rate for smooth animation
+        }, 5); // Slower increment rate for smooth animation
 
         return () => clearInterval(interval);
       }
