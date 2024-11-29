@@ -15,8 +15,8 @@ import Contact from "@/components/otherPages/contact/Contact";
 import ServiceDetails from "@/components/otherPages/service/ServicesV2";
 export const metadata = {
   title:
-    "Services || Dotsito Technologies",
-  description: "Dotsito Technologies",
+    "Services | Dotsito",
+  description: "We provide innovative digital solutions, expert strategies, and advanced services to empower businesses, drive growth, foster innovation, and deliver impactful, value-driven results in a dynamic, evolving digital landscape.",
 };
 export default function Page({ params }) {
   const serviceItem =

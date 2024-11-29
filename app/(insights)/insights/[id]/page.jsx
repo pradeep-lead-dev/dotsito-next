@@ -13,8 +13,8 @@ import { insights } from "@/data/insights";
 import Insight from "@/components/otherPages/insight/Insight";
 
 export const metadata = {
-  title: "Insight || Dotsito Technologies",
-  description: "Dotsito Technologies",
+  title: "Insight | Dotsito",
+  description: "Explore our insights section for in-depth case studies showcasing transformative solutions and thought-provoking blogs offering expert perspectives. Discover how our journey drives innovation and excellence through impactful stories.",
 };
 export async function generateStaticParams() {
   return insights.map((insight) => ({

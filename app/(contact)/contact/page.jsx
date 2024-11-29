@@ -13,8 +13,8 @@ import Image from "next/image";
 // import MapComponent from "@/components/otherPages/contact/MapComponent";
 // import MapComponent from "@/components/otherPages/contact/MapV2";
 export const metadata = {
-  title: "Contact || Dotsito Technologies",
-  description: "Dotsito Technologies",
+  title: "Contact | Dotsito",
+  description: "We're here to connect, collaborate, and create meaningful solutions. Have questions or ideas? Fill out the form below, and let's start a conversation that drives innovation and success.",
 };
 export default function Page() {
   return (
@@ -31,7 +31,7 @@ export default function Page() {
           <h6 style={{ textAlign: 'center' }}>Global Presence</h6>
 
           <div className={'image-container'}>
-            <Image src={`/assets/img/contact/locations-map2.png`} layout="fill" className="image" />
+            <Image src={`/assets/img/contact/locations-map2.png`} layout="fill" className="image" alt="location"/>
           </div>
 
           {/* <MapComponent /> */}

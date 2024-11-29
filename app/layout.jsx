@@ -69,9 +69,9 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        {/* Optional: Add more favicons */}
-        {/* <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" /> */}
+
+        <link rel="canonical" href="https://www.dotsito.com/" />
+
 
         <link
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body>
-        <SiteMenu />
+        {/* <SiteMenu /> */}
         {/* <MobileNav /> */}
         {/* <PopupSearch /> */}
         {/* <ToastContainer

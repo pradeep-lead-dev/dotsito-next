@@ -7,7 +7,7 @@ import NotFound from "@/components/otherPages/NotFound";
 import Link from "next/link";
 export const metadata = {
   title:
-    "Page Not Found || Dotsito Technologies",
+    "Page Not Found | Dotsito",
   description: "Dotsito Technologies",
 };
 export default function Page() {
