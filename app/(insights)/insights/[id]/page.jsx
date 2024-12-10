@@ -13,8 +13,8 @@ import { insights } from "@/data/insights";
 import Insight from "@/components/otherPages/insight/Insight";
 
 export const metadata = {
-  title: "Insight || Dotsito Technologies",
-  description: "Dotsito Technologies",
+  title: "Insight | Dotsito",
+  description: "Explore our insights section for in-depth case studies showcasing transformative solutions and thought-provoking blogs offering expert perspectives. Discover how our journey drives innovation and excellence through impactful stories.",
 };
 export async function generateStaticParams() {
   return insights.map((insight) => ({
@@ -36,6 +36,7 @@ export default function Page({ params }) {
         <main className="main position-relative" id="mains">
           <HeroModule title={insight.title} subtitle={insight.subtitle} imagePath={insight.imgSrc} insight={insight} />
           <Insight insight={insight} />
+          <hr />
           <div className="">
             <h4 style={{ textAlign: 'center' }}>Related {insight.category}</h4>
           </div>

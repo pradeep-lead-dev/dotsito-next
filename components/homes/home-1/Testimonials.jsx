@@ -62,7 +62,7 @@ export default function Testimonials() {
               height="580"
             />
           </div>
-          <div className="title-wrap mb-50">
+          <div className="title-wrap mb-50 mt-20">
             <div className="title-area text-start" style={{ maxWidth: "100%" }}>
               <h2
                 className="title text-start wow fadeInUp"
@@ -114,7 +114,7 @@ export default function Testimonials() {
                         height="17"
                       />
                     </div> */}
-                  <p className="text">{testimonial.text}</p>
+                  <a className="text" style={{textAlign: 'left'}}>{testimonial.text}</a>
                    
      
                  </div> 

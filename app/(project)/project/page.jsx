@@ -11,8 +11,8 @@ import Loader from "@/app/Loader";
 import HeroModule from "@/components/common/HeroModule";
 
 export const metadata = {
-  title: "Project || Dotsito Technologies",
-  description: "Dotsito Technologies",
+  title: "Project | Dotsito",
+  description: "Highlighting our past, present, and future insights for continued success.",
 };
 export default function Page() {
   return (

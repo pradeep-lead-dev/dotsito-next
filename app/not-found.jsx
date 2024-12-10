@@ -8,7 +8,7 @@ import Link from "next/link";
 import ChatGPTWidget from "./ChatGPTWidget";
 export const metadata = {
   title:
-    "Page Not Found || Dotsito Technologies",
+    "Page Not Found | Dotsito Technologies",
   description: "Dotsito Technologies",
 };
 export default function Page() {

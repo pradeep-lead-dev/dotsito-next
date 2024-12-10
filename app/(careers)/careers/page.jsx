@@ -12,8 +12,8 @@ import HeroModule from "@/components/common/HeroModule";
 import { insights } from "@/data/insights";
 
 export const metadata = {
-  title: "Careers || Dotsito Technologies",
-  description: "Dotsito Technologies",
+  title: "Careers | Dotsito",
+  description: "Fostering intellectual growth through a superior learning environment.",
 };
 export default function Page() {
   return (

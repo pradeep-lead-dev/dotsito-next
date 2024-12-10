@@ -43,7 +43,7 @@ export default function Home1() {
           <About />
           <Credible />
           {/* <Techhubs /> */}
-          <div className="container">
+          <div className="container" style={{minWidth: '100%'}}>
           <div className="title-wrap mb-50 " style={{ backgroundColor: "aliceblue", borderLeft: "10px solid #2463cf", paddingLeft: "25px", display: 'block', maxWidth: '98%' }}>
             <div className="title-area">
               <h6

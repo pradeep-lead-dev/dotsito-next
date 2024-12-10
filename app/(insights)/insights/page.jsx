@@ -12,8 +12,8 @@ import HeroModule from "@/components/common/HeroModule";
 import { insights } from "@/data/insights";
 
 export const metadata = {
-  title: "Insights || Dotsito Technologies",
-  description: "Dotsito Technologies",
+  title: "Insights | Dotsito",
+  description: "Explore our insights section for in-depth case studies showcasing transformative solutions and thought-provoking blogs offering expert perspectives. Discover how our journey drives innovation and excellence through impactful stories.",
 };
 export default function Page() {
   return (

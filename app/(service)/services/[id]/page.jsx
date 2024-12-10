@@ -17,8 +17,8 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Services || Dotsito Technologies",
-  description: "Dotsito Technologies",
+  title: "Services | Dotsito",
+  description: "We provide innovative digital solutions, expert strategies, and advanced services to empower businesses, drive growth, foster innovation, and deliver impactful, value-driven results in a dynamic, evolving digital landscape.",
 };
 export default function Page({ params }) {
   const service = serviceData.find(service => {
@@ -54,7 +54,7 @@ export default function Page({ params }) {
             <Faq3 serviceDetails={service} isMobile/>
           </div>
           <hr />
-          <ServiceDetails headerText={`Explore our other services`} exclude={service} />
+          <ServiceDetails headerText={`Explore our other services`} exclude={service} notForDesktop/>
           <hr />
           <h3 style={{ padding: '12px' }}>Explore our recent case studies</h3>
           <Projects insights={insights} />

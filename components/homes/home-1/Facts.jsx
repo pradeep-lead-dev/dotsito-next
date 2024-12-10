@@ -50,7 +50,7 @@ export default function Facts() {
     }, [animate, count, max]);
 
     return (
-      <a style={{ fontSize: "2em",  fontWeight: "bold" }}>
+      <a style={{ fontWeight: "bold" }}>
         {count}
       </a>
     );
@@ -79,9 +79,9 @@ export default function Facts() {
               </div>
               <div style={{  alignItems: "center" }}>
                 <Counter max={box.number} animate={inView} />
-                <a style={{ fontSize: "2em", marginLeft: "4px" }}>{box.symbol || '+'}</a>
+                <a style={{ marginLeft: "4px" }}>{box.symbol || '+'}</a>
               </div>
-              <p style={{ fontSize: "1em",  marginTop: "10px" }}>{box.label}</p>
+              <a style={{  marginTop: "10px" }}>{box.label}</a>
             </div>
           ))}
         </div>

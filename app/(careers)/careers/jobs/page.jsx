@@ -14,8 +14,8 @@ import Jobs from "@/components/otherPages/Jobs/Jobs";
 import JobsListing from "@/components/otherPages/blog/Blogs2";
 
 export const metadata = {
-  title: "Jobs || Dotsito Technologies",
-  description: "Dotsito Technologies",
+  title: "Jobs | Dotsito",
+  description: "We're not just a company, we're a family. We understand that discovering a fulfilling and impactful career can take time. Our mission is to simplify that journey for you, creating a workplace where you'll feel excited to contribute every day. Begin your career path with us by exploring our current opportunities.",
 };
 export default function Page() {
   return (

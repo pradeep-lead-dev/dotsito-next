@@ -10,14 +10,24 @@ export default function HeroModule({ videoPath, title, subtitle, customButton, c
     <section className="hero-1" id="hero10" style={{ width: "100%", position: "relative" }}>
       <Swiper
         className="swiper gt-slider hero-slider1 swiper-fade swiper-initialized swiper-horizontal swiper-autoheight swiper-watch-progress swiper-backface-hidden"
-        id="heroSlide1"
-        modules={[EffectFade]}
-        effect="fade"
+        // id="heroSlide1"
+        // modules={[EffectFade]}
+        // effect="fade"
         autoHeight
       >
-        <SwiperSlide className="swiper-slide" >
+        <SwiperSlide className="" >
           <div className="hero-inner">
             <div className="gt-hero-bg hero-video-bg">
+              <div className="video-overlay" style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                zIndex: 1,
+                opacity: 0.1
+              }}></div>
               <video
                 className="hero-video"
                 autoPlay

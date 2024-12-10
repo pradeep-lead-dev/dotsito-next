@@ -16,12 +16,12 @@ export default function Faq3({ serviceDetails, isMobile }) {
           key={index}
           style={{padding: !isMobile ?'.5rem' : '0'}}
           header={
-            <p style={{ fontWeight: "none", textAlign: "left" }}>
+            <li style={{ fontWeight: "none", textAlign: "left" }}>
               {question?.question}
-            </p>
+            </li>
           }
         >
-          <p className="" style={{padding: '1rem'}}>{question?.answer}</p>
+          <li className="" style={{padding: '1rem'}}>{question?.answer}</li>
         </Panel>
       ))}
     </Collapse>

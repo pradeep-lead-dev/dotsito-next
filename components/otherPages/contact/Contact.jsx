@@ -161,7 +161,7 @@ export default function Contact() {
           <div className="contact-wrapper">
             <div className="contact-content">
               <div className="title-area">
-                <h3 className="" style={{ padding: "0" }}>Ready to Get Started?</h3>
+                <h6 className="" style={{ padding: "0" }}>Ready to Get Started?</h6>
                 {/* <p>
                   Providing best-of-breed knowledge environment to enquire at{" "}
                   <a href="mailto:operations@dotsito.com" style={{ fontWeight: "bold" }} target="_blank">
@@ -169,7 +169,7 @@ export default function Contact() {
                   </a>.
                 </p> */}
                 {/* <p style={{ marginBottom: '0' }}>Need more information? </p> */}
-                <p> We will take approximately 3-5 working days to respond to your enquiry.</p>
+                <a> We will take approximately 3-5 working days to respond to your enquiry.</a>
               </div>
 
               <br />
@@ -190,7 +190,7 @@ export default function Contact() {
                       >
                         {item.type === "select" ? (
                           <Select
-                            size="large"
+                            size=""
                             placeholder={`Select ${item.label}`}
                             showSearch // Enables searching
                             optionFilterProp="children" // Filters options by their displayed text
@@ -205,9 +205,9 @@ export default function Contact() {
                             ))}
                           </Select>
                         ) : item.type === "textarea" ? (
-                          <Input.TextArea size="large" rows={4} placeholder="Write your message" />
+                          <Input.TextArea size="" rows={4} placeholder="Write your message" />
                         ) : (
-                          <Input size="large" placeholder={`Enter your ${item.label.toLowerCase()}`} />
+                          <Input size="" placeholder={`Enter your ${item.label.toLowerCase()}`} />
                         )}
                       </Form.Item>
                     </Col>

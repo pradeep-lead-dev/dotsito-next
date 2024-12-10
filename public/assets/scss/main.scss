@@ -198,9 +198,9 @@ select {
   --font-size-small-tablet: 10px;
 
   /* Desktop Font Sizes */
-  --font-size-title-desktop: 30px;
-  --font-size-subtitle-desktop: 24px;
-  --font-size-body-desktop: 20px;
+  --font-size-title-desktop: 40px;
+  --font-size-subtitle-desktop: 32px;
+  --font-size-body-desktop: 24px;
   --font-size-small-desktop: 16px;
 }
 
@@ -212,6 +212,24 @@ select {
   --font-size-small: var(--font-size-small-mobile);
 }
 
+h1,
+h2,
+h3 {
+  line-height: 30px !important;
+}
+
+h4,
+h5,
+h6 {
+  line-height: 30px !important;
+}
+
+p,
+li,
+label {
+  line-height: 1.5;
+}
+
 /* Tablet: 768px - 959px */
 @media (min-width: 768px) and (max-width: 959px) {
   :root {
@@ -219,6 +237,25 @@ select {
     --font-size-subtitle: var(--font-size-subtitle-tablet);
     --font-size-body: var(--font-size-body-tablet);
     --font-size-small: var(--font-size-small-tablet);
+  }
+
+  h1,
+  h2,
+  h3 {
+   
+    line-height: 40px !important;
+  }
+
+  h4,
+  h5,
+  h6 {
+    line-height: 40px !important;
+  }
+
+  p,
+  li,
+  label {
+    line-height: 1.5;
   }
 }
 
@@ -230,34 +267,54 @@ select {
     --font-size-body: var(--font-size-body-desktop);
     --font-size-small: var(--font-size-small-desktop);
   }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 50px !important;
+  }
+
+  h4,
+  h5,
+  h6 {
+    line-height: 50px !important;
+  }
+
+  p,
+  li,
+  label {
+    line-height: 1.5;
+  }
+
+  small,
+  button,
+  span,
+  a {
+    font-size: var(--font-size-small) !important;
+  }
 }
 
 h1,
 h2,
 h3 {
   font-size: var(--font-size-title) !important;
-  line-height: 35px !important;
 }
 
 h4,
 h5,
 h6 {
   font-size: var(--font-size-subtitle) !important;
-  line-height: 35px !important;
 }
 
-p,
-
-li,
-label {
+p {
   line-height: 1.5;
   font-size: var(--font-size-body) !important;
 }
 
 small,
-a,
 button,
-span {
+span,
+a,li,label,input {
   font-size: var(--font-size-small) !important;
 }
 
@@ -450,3 +507,7 @@ nextjs-portal {
     max-height: 80vh !important;
   }
 }
+
+// .ant-collapse-header-text{
+//   font-size: var(--font-size-small) !important;
+// }

@@ -29,14 +29,14 @@ export default function Job({ job }) {
                 <div className="job-card description-card">
                     <Card>
                         <h3>Job Description</h3><br />
-                        <h6 >Responsibilities</h6>
+                        <h6 style={{marginBottom: '15px'}}>Responsibilities</h6>
                         <ul className="list">
                             {job.responsibilities.map((responsibility, index) => (
                                 <li key={index}>{responsibility}</li>
                             ))}
                         </ul>
 
-                        <h6 >Requirements</h6>
+                        <h6 style={{marginBottom: '15px'}}>Requirements</h6>
                         <ul className="list">
                             {job.requirements.map((requirement, index) => (
                                 <li key={index}>{requirement}</li>
@@ -51,53 +51,53 @@ export default function Job({ job }) {
                         <div  style={{display: 'flex', flexDirection:'column', gap:'16px'}}>
                         <div>
                             <h3>Job Information</h3><br />
-                            <p>
+                            <a>
                                 <strong>Job ID:</strong>
                                 <br /> {job.jobId}
-                            </p>
+                            </a>
                         </div>
 
 
                         <div>
-                            <p>
+                            <a>
                                 <strong>Posted on:</strong>
                                 <br /> {job.postedOn}
-                            </p>
+                            </a>
                         </div>
 
                         <div>
-                            <p>
+                            <a>
                                 <strong>Number of Positions:</strong>
                                 <br /> {job.openCount}
-                            </p>
+                            </a>
                         </div>
 
                         <div>
-                            <p>
+                            <a>
                                 <strong>Job Type:</strong>
                                 <br /> {job.type}
-                            </p>
+                            </a>
                         </div>
 
                         <div>
-                            <p>
+                            <a>
                                 <strong>Work Experience:</strong>
                                 <br /> {job.experienceRequired}
-                            </p>
+                            </a>
                         </div>
 
                         <div>
-                            <p>
+                            <a>
                                 <strong>Educational Qualification:</strong>
                                 <br /> {job.education}
-                            </p>
+                            </a>
                         </div>
 
                         <div>
-                            <p>
+                            <a>
                                 <strong>Required Skills:</strong>
                                 <br />
-                            </p>
+                            </a>
 
                             <div className="skills-tags">
                                 {job.requiredSkills.map((skill, index) => (
@@ -108,31 +108,31 @@ export default function Job({ job }) {
                             </div>
                         </div>
                         <div>
-                            <p>
+                            <a>
 
                                 <strong>State/Province:</strong>
                                 <br /> {job.state}
-                            </p>
+                            </a>
                         </div>
 
                         <div>
-                        <p>
+                        <a>
                             <strong>Zip/Postal Code:</strong>
                             <br /> {job.zipCode}
-                        </p>
+                        </a>
                         </div>
                         
                        <div>
-                       <p>
+                       <a>
                             <strong>Country:</strong>
                             <br /> {job.country}
-                        </p>
+                        </a>
                        </div>
                        <div>
-                       <p>
+                       <a>
                             <strong>Industry:</strong>
                             <br /> {job.industry}
-                        </p>
+                        </a>
                        </div>
                        </div>
                     </Card>
