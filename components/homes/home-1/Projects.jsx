@@ -25,7 +25,7 @@ export default function Projects({ insights }) {
   return (
     <section className="project-area" style={{ position: "relative", marginBottom: '24px' }}>
       <div className="project-wrap">
-        <div className="container " style={{ maxWidth: "98%", marginLeft: 'auto' }}>
+        <div className="container " style={{ minWidth: '100%'}}>
           <div style={{ textAlign: "center" }}>
             <div className="card-container">
               {insights.slice(0, visibleCount).map((study, index) => (
@@ -42,11 +42,11 @@ export default function Projects({ insights }) {
                     />
                   </div>
                   <div className="card-content">
-                    <h4 className="card-title">{study.title}</h4>
-                    <p className="card-subtitle">
-                      {truncateText(study.subtitle, 120)}{" "}
+                    <p className="card-title">{study.title}</p>
+                    <a className="card-subtitle">
+                      {truncateText(study.subtitle, 200)}{" "}
                       <Link href={`/insights/${study.id}`} style={{color: 'blue'}}>Read More</Link>
-                    </p>
+                    </a>
                   </div>
                 </div>
               ))}

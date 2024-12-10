@@ -68,7 +68,10 @@ export default function Footer1() {
         </div>
         <div className="container">
           <div className="footer-layout style1">
-            <div className="row">
+            <div className="row" style={{
+              display: 'flex',
+              alignItems: 'baseline'
+            }}>
               {/* About Section */}
               {/* <div className="col-xl-4 col-md-6 col-12">
                 <div
@@ -104,12 +107,12 @@ export default function Footer1() {
                 >
                   <h6 className="widget_title" >So we</h6>
                   <div className="menu-all-pages-container">
-                    <p style={{ color: '#fff' }}>
+                    <a style={{ color: '#fff' }}>
                       DOTSITO IT is a dynamic and innovative technology company
                       dedicated to solutions.
-                    </p>
+                    </a>
                     <br />
-                    <div className="gt-social style2">
+                    <div className="gt-social style2" style={{marginTop: '30px'}}>
                       {socialLinks2.map((link, index) => (
                         <a href={link.href} key={index} target="_blank" style={{ cursor: 'pointer' }}>
                           <i className={link.iconClass} />
@@ -198,10 +201,10 @@ export default function Footer1() {
         <div className="">
           <div className="">
             <div className="" data-wow-delay=".3s" style={{ textAlign: 'center' }}>
-              <small style={{ color: '#fff', textAlign: 'center', margin: 'auto', padding: '2px' }}>
+              <smalltext style={{ color: '#fff', textAlign: 'center', margin: 'auto', padding: '2px',fontSize: '14px', fontFamily : 'Poppins' }}>
                 <i className="fal fa-copyright" />
                 {" " + new Date().getFullYear()} All rights reserved. Dotsito Technologies.
-              </small>
+              </smalltext>
             </div>
             {/* <div className="layout-link wow fadeInUp" data-wow-delay=".6s">
               <div className="link-wrapper">

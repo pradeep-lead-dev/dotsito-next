@@ -36,6 +36,7 @@ export default function Page({ params }) {
         <main className="main position-relative" id="mains">
           <HeroModule title={insight.title} subtitle={insight.subtitle} imagePath={insight.imgSrc} insight={insight} />
           <Insight insight={insight} />
+          <hr />
           <div className="">
             <h4 style={{ textAlign: 'center' }}>Related {insight.category}</h4>
           </div>

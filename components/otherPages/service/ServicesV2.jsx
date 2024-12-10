@@ -67,7 +67,7 @@ export default function ServiceDetails({ headerText, exclude, notForDesktop }) {
                                                         <Collapse accordion>
                                                             {Object.entries(categorizedServices).map(([category, items], index) =>
                                                                 category !== "uncategorized" ? (
-                                                                    <Panel header={category} key={index}>
+                                                                    <Panel header={category} key={index} >
                                                                         <ul style={{ listStyleType: "none", padding: 0 }}>
                                                                             {items.map((item) => (
                                                                                 <li
@@ -132,8 +132,9 @@ export default function ServiceDetails({ headerText, exclude, notForDesktop }) {
                                             {selectedService && (
                                                 <>
                                                     <div className="details-content">
-                                                        <h3 style={{ textAlign: 'left' }}>{selectedService?.category_title}</h3>
-                                                        <p className="mt-3 mb-3">{selectedService?.category_content}</p>
+                                                        <h4 style={{ textAlign: 'left' }}>{selectedService?.category_title}</h4>
+                                                        <a className="mt-3 mb-3">{selectedService?.category_content}</a>
+                                                        
                                                         <div
                                                             className="details-image"
                                                             style={{
@@ -142,6 +143,7 @@ export default function ServiceDetails({ headerText, exclude, notForDesktop }) {
                                                                 backgroundSize: "cover",
                                                                 height: "300px",
                                                                 borderRadius: "18px",
+                                                                marginTop: '26px'
                                                             }}
                                                         ></div>
                                                         <div className="details-video-items">

@@ -84,7 +84,7 @@ export default function Jobs() {
                         >
                             <small>{job.type}</small><br />
                             <Link href={`/careers/jobs/${job.id}`} style={{color: 'blue'}}>
-                                {job.title}
+                                <p style={{color: '#0000FF'}}>{job.title}</p>
                             </Link>
                             <Meta
                                 description={
